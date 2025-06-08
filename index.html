@@ -5,9 +5,8 @@
     <title>Checkout-page</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+ <body>
     <h1>Checkout</h1>
-    <p>Here's a sample functional checkout page.</p>
     <section>
       <h2>Your Cart</h2>
       <img
@@ -19,16 +18,42 @@
       <h2>Payment Information</h2>
       <form action="">
         <label for="card-name">
-          <input type="text" id="card-name" name="card-name" />
+          <input 
+          type="text" 
+          id="card-name" 
+          name="card-name" 
+          required 
+          aria-required="true"
+          placeholder="Name on card" 
+          />
         </label>
         <label for="card-number">
-          <input type="text" id="card-number" name="card-number">
+          <input 
+          type="text" 
+          id="card-number" 
+          name="card-number" 
+          placeholder="Card Number"
+          />
         </label>
         <label for="card-exp">
-          <input type="number" id="card-exp" name="card-exp">
+          <input 
+          type="number" 
+          id="card-exp" 
+          name="card-exp" 
+          required 
+          aria-required="true"
+          placeholder="Card Expiration"
+          />
         </label>
         <label for="card-cvv">
-          <input type="number" id="card-cvv" name="card-cvv">
+          <input 
+          type="number" 
+          id="card-cvv" 
+          name="card-cvv" 
+          required 
+          aria-required="true"
+          placeholder="CVV"
+          />
         </label>
       </form>
     </section>
